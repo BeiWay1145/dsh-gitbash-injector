@@ -1,0 +1,10 @@
+node_modules/
+.npm-cache-tmp/
+*.log
+.DS_Store
+Thumbs.db
+
+# Runtime artifacts
+*.jsonl
+__*.mjs
+__*.js

@@ -1,0 +1,37 @@
+{
+  "name": "dsh-gitbash-injector",
+  "version": "0.1.0",
+  "description": "DSH plugin: inject a Git-for-Windows bash shell provider into selected agent sessions, without modifying or adding any agent preset.",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "README.md",
+    "cordis.patch.yml",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "gitbash",
+    "shell",
+    "windows",
+    "sandbox"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeiWay1145/dsh-gitbash-injector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BeiWay1145/dsh-gitbash-injector/issues"
+  },
+  "homepage": "https://github.com/BeiWay1145/dsh-gitbash-injector#readme"
+}

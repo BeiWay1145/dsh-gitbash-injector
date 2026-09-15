@@ -1,0 +1,14 @@
+# dsh-gitbash-injector bundle patch layer.
+#
+# A profile BUNDLE must (a) declare `dsh.bundle.patch` in package.json and
+# (b) actually INSERT its own row here. An empty array satisfies (a) but mounts
+# nothing: the bundle layer would contribute no entry, the plugin would never be
+# imported, and (because nothing errors) the failure is silent — the plugin
+# simply never runs.
+#
+# The row is inserted with its default config. A profile's own cordis.patch.yml
+# is applied AFTER every bundle layer, so per-deployment tuning (shellPath,
+# timeoutMs, verbose, ...) is written there by id and overrides this row.
+- insert:
+    - id: gitbash-injector
+      name: dsh-gitbash-injector
