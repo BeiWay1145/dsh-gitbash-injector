@@ -181,6 +181,11 @@ POSIX 上插件**故意不生效**：那边的内核自带 bash 行本来就能�
 从 profile 的 `package.json` 里移除 `dsh.profile.bundles` 与 `dependencies` 中的
 `dsh-gitbash-injector`，跑 `pnpm install`，重启 DSH。
 
+## 相关文档
+
+- [CHANGELOG.md](CHANGELOG.md) —— 版本变更
+- [docs/plugin-authoring-findings.md](docs/plugin-authoring-findings.md) —— **编写 DSH 插件前值得先读的 10 条实测事实**（PTC 双事件族、`isolate()` 签名、schema 原样透传、静默不挂载等），每条都标注核验状态
+
 ## 许可
 
 MIT —— 见 [LICENSE](LICENSE)。

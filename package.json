@@ -6,8 +6,10 @@
   "main": "lib/index.js",
   "files": [
     "lib",
+    "docs",
     "README.md",
     "README_EN.md",
+    "CHANGELOG.md",
     "cordis.patch.yml",
     "LICENSE"
   ],

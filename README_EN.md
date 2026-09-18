@@ -193,6 +193,11 @@ On POSIX the plugin is inert by design: the shipped bash rows already work there
 Remove `dsh-gitbash-injector` from `dsh.profile.bundles` and from `dependencies`
 in the profile's `package.json`, run `pnpm install`, and restart DSH.
 
+## See also
+
+- [CHANGELOG.md](CHANGELOG.md) — version history
+- [docs/plugin-authoring-findings.md](docs/plugin-authoring-findings.md) — **ten verified facts worth reading before writing a DSH plugin** (the PTC dual event family, the `isolate()` signature, verbatim schema forwarding, silent non-mounting, and more), each marked with its verification status
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
